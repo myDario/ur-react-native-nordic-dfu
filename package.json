@@ -21,7 +21,7 @@
     "react-native": ">= 0.45.1"
   },
   "devDependencies": {
-    "documentation": "^4.0.0-rc.1",
+    "documentation": "^14.0.0",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
     "prettier": "^1.2.2"
