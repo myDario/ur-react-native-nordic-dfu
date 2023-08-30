@@ -8,7 +8,9 @@
   "scripts": {
     "test": "echo \"No test specified\"",
     "precommit": "lint-staged",
-    "document": "documentation readme --readme-file README.md -s \"API\" -g"
+    "document": "documentation readme --readme-file README.md -s \"API\" -g",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "react-native",
@@ -21,7 +23,7 @@
     "react-native": ">= 0.45.1"
   },
   "devDependencies": {
-    "documentation": "^4.0.0-rc.1",
+    "documentation": "^4.0.0",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
     "prettier": "^1.2.2"
@@ -36,5 +38,9 @@
       "git add README.md"
     ]
   },
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
+  }
 }
